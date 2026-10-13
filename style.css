@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+    margin: 0;
+}
+
+.box {
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0 0 20px;
+    color: #222;
+    font-weight: normal;
+}
+
+.add-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #555;
+}
+
+#addBtn {
+    padding: 10px 18px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#addBtn:hover {
+    background: #111;
+}
+
+.filter-row {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.filter {
+    flex: 1;
+    padding: 7px;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #555;
+}
+
+.filter.active {
+    background: #333;
+    color: #fff;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+    min-height: 60px;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+#taskList li.done span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+#taskList input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+#taskList span {
+    flex: 1;
+    font-size: 15px;
+    color: #333;
+}
+
+.delete {
+    background: none;
+    border: none;
+    color: #d33;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px 6px;
+}
+
+.delete:hover {
+    background: #fee;
+    border-radius: 4px;
+}
+
+.empty {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #777;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+#clearDone {
+    background: none;
+    border: none;
+    color: #d33;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#clearDone:hover {
+    text-decoration: underline;
+}
